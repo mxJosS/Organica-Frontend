@@ -142,15 +142,25 @@ img {
 .pie {
     min-height: 135px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
+    padding: 30px 16px;
     background-color: var(--verde);
+    text-align: center;
 }
 
 .pie-logo {
     width: 280px;
     max-width: 80%;
     height: auto;
+}
+
+.pie-datos p {
+    color: var(--blanco);
+    font-size: 16px;
+    margin: 2px 0;
 }
 
 @media (max-width: 480px) {
