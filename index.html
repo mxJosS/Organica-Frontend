@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="ancho barra">
+            <a href="#" class="logo">
+                <img src="assets/logo_arriba.png" alt="Logo de la granja">
+            </a>
+
+            <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav class="menu" id="menu">
+                <ul class="menu-lista">
+                    <li><a href="#" class="menu-enlace">Inicio</a></li>
+                    <li><a href="#" class="menu-enlace">Servicios</a></li>
+                    <li><a href="#" class="menu-enlace">Nuestros Productos</a></li>
+                    <li><a href="#" class="menu-enlace">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="portada">
+            <div class="ancho">
+                <h1 class="portada-titulo">Cultivamos verduras orgánicas<br>y las traemos a tu mesa</h1>
+            </div>
+        </section>
+
+        <section class="servicios">
+            <div class="ancho">
+                <h2 class="titulo">Nuestros Servicios</h2>
+                <p class="subtitulo">Lo que ofrecemos</p>
+
+                <div class="tarjetas">
+                    <article class="tarjeta">
+                        <img src="assets/icono1.png" alt="" class="tarjeta-icono">
+                        <h3 class="tarjeta-titulo">Ganado Vacuno</h3>
+                        <p class="tarjeta-texto">Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora.</p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="assets/icono2.png" alt="" class="tarjeta-icono">
+                        <h3 class="tarjeta-titulo">Productos Lácteos</h3>
+                        <p class="tarjeta-texto">Los productos lácteos como la leche, el queso y el yogur contienen los nutrientes que su cuerpo necesita.</p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="assets/icono3.png" alt="" class="tarjeta-icono">
+                        <h3 class="tarjeta-titulo">Frutas de la Huerta</h3>
+                        <p class="tarjeta-texto">Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas de huerta.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <img src="assets/logo_abajo.png" alt="Logo de la granja" class="pie-logo">
+    </footer>
+
+    <script>
+        $("#boton-menu").click(function(){
+            $("#menu").slideToggle();
+        });
+    </script>
+</body>
+</html>
